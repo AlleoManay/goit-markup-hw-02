@@ -345,11 +345,22 @@ ul {
   font-size: var(--main-fz);
   font-style: normal;
   line-height: 1.1;
+  opacity: .6;
   color: var(--primary-white-color);
   text-decoration: none;
 }
 
+.footer__item:first-child > .footer__link {
+  color: var(--primary-white-color);
+  opacity: 1;
+}
+
+.footer__item:first-child > .footer__link:hover,
+.footer__item:first-child > .footer__link:focus,
 .footer__link:hover,
 .footer__link:focus {
   color: var(--accent-color);
+  opacity: 1;
 }
+
+
