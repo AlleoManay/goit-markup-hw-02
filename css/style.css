@@ -300,8 +300,10 @@ ul {
 
 
 .main-content__text {
+  font-family: "Roboto", sans-serif;
   font-size: var(--main-sub-fz);
   line-height: 1.8;
+  color: var(--primary-text-color);
 }
 
 
