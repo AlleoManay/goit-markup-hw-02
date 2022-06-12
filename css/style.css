@@ -10,6 +10,8 @@
   --main-fz: 14px;
   --main-sub-fz: 16px;
   --main-sub-title-fz: 18px;
+
+  --title-letter-spacing: 6%;
 }
 
 
@@ -17,12 +19,19 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
+  letter-spacing: 3%;
 }
 
 
 ul {
   list-style: none;
 }
+
+a, button {
+  font-family: inherit;
+}
+
+
 
 
 
@@ -40,8 +49,9 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.4;
-  color: var(--title-text-color);
   text-decoration: none;
+
+  color: var(--title-text-color);
 }
 
 
@@ -63,8 +73,9 @@ ul {
   font-weight: 500;
   font-size: var(--main-fz);
   line-height: 1.1;
-  color: var(--title-text-color);
   text-decoration: none;
+
+  color: var(--title-text-color);
 }
 
 
@@ -79,12 +90,12 @@ ul {
 
 
 .header__sub-link {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: var(--main-fz);
   line-height: 1.1;
-  color: var(--primary-text-color);
   text-decoration: none;
+
+  color: var(--primary-text-color);
 }
 
 
@@ -108,20 +119,25 @@ ul {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  text-transform: uppercase;
+  letter-spacing: var(--title-letter-spacing);
+
   color: var(--primary-white-color);
 }
 
 
 .hero__button {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: var(--main-sub-fz);
   line-height: 1.8;
+  letter-spacing: var(--title-letter-spacing);
   border-radius: 4px;
   border: none;
   padding: 10px 32px;
+
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  
 }
 
 
@@ -145,6 +161,7 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
+
   color: var(--title-text-color);
 }
 
@@ -157,6 +174,8 @@ ul {
   font-weight: 700;
   font-size: var(--main-fz);
   line-height: 1.2;
+  text-transform: uppercase;
+
   color: var(--title-text-color);
 }
 
@@ -164,6 +183,7 @@ ul {
 .characteristic__text {
   font-size: var(--main-fz);
   line-height: 1.7;
+
   color: var(--primary-text-color);
 }
 
@@ -180,6 +200,7 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
+
   color: var(--title-text-color);
 }
 
@@ -204,6 +225,7 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
+
   color: var(--title-text-color);
 }
 
@@ -223,6 +245,7 @@ ul {
   font-weight: 500;
   font-size: var(--main-sub-fz);
   line-height: 1.2;
+
   color: var(--title-text-color);
 }
 
@@ -230,6 +253,7 @@ ul {
 .our-team__text {
   font-size: var(--main-sub-fz);
   line-height: 1.2;
+
   color: var(--primary-text-color)
 }
 
@@ -253,13 +277,13 @@ ul {
 
 
 .filter__button {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: var(--main-sub-fz);
   line-height: 1.6;
   border: none;
   padding: 6px 22px;
   border-radius: 4px;
+
   color: var(--title-text-color);
   background-color: var(--sub-background-color);
 }
@@ -269,6 +293,7 @@ ul {
 .filter__button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+
   cursor: pointer;
 }
 
@@ -295,14 +320,16 @@ ul {
   font-weight: 700;
   font-size: var(--main-sub-title-fz);
   line-height: 2;
+  letter-spacing: var(--title-letter-spacing);
+
   color: var(--title-text-color);
 }
 
 
 .main-content__text {
-  font-family: "Roboto", sans-serif;
   font-size: var(--main-sub-fz);
   line-height: 1.8;
+
   color: var(--primary-text-color);
 }
 
@@ -318,12 +345,12 @@ ul {
 
 
 .footer__logo {
-  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.4;
-  color: var(--primary-white-color);
   text-decoration: none;
+
+  color: var(--primary-white-color);
 }
 
 
@@ -343,13 +370,13 @@ ul {
 
 
 .footer__link {
-  font-weight: 500;
   font-size: var(--main-fz);
   font-style: normal;
   line-height: 1.1;
   opacity: .6;
-  color: var(--primary-white-color);
   text-decoration: none;
+
+  color: var(--primary-white-color);
 }
 
 .footer__item:first-child > .footer__link {
@@ -363,6 +390,10 @@ ul {
 .footer__link:focus {
   color: var(--accent-color);
   opacity: 1;
+}
+
+.current {
+  color: var(--accent-color);
 }
 
 
